@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.letronghieu.customfont.textview.AlexBrushRegularTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:textColor="@color/black"
+        android:text="@string/cyphernet"
+    />
+    <com.letronghieu.customfont.textview.ChunkFivePrintTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:textColor="@color/black"
+        android:text="cyphernet"
+        tools:ignore="HardcodedText"/>
+    <com.letronghieu.customfont.textview.WindsongTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="100sp"
+        android:textColor="@color/black"
+        android:text="cyphernet"
+        tools:ignore="HardcodedText">
+    </com.letronghieu.customfont.textview.WindsongTextview>
+</LinearLayout>
