@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A5A9AC">
+
+    <TextView
+        android:id="@+id/tv_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        android:text="@string/noi_dung"
+        android:textColor="#455A64"
+        android:layout_toStartOf="@id/img_drop_down"
+        android:textSize="19sp"
+        tools:ignore="TextSizeCheck" />
+    <ImageView
+        android:id="@+id/img_drop_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_drop"
+        android:contentDescription="@string/todo" />
+
+
+
+</RelativeLayout>
