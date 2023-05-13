@@ -9,13 +9,14 @@ import com.letronghieu.affirmations.R
 import androidx.recyclerview.widget.RecyclerView
 import com.letronghieu.affirmations.model.Affirmation
 
+@Suppress("UNREACHABLE_CODE")
 class ItemAdapter (
     private val context: Context,
     private  val dataset: List<Affirmation>
     ): RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
 
 
-    class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
+    class ItemViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
 
     }
@@ -24,7 +25,6 @@ class ItemAdapter (
         TODO("Not yet implemented")
         val adapterLayout = LayoutInflater.from(parent.context)
             .inflate(R.layout.list_item, parent ,false)
-
         return ItemViewHolder(adapterLayout)
     }
 
