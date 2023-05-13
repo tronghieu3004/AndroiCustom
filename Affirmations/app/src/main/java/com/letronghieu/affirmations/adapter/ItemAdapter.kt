@@ -9,32 +9,28 @@ import com.letronghieu.affirmations.R
 import androidx.recyclerview.widget.RecyclerView
 import com.letronghieu.affirmations.model.Affirmation
 
-@Suppress("UNREACHABLE_CODE")
 class ItemAdapter (
     private val context: Context,
     private  val dataset: List<Affirmation>
     ): RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
 
 
-    class ItemViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        TODO("Not yet implemented")
         val adapterLayout = LayoutInflater.from(parent.context)
             .inflate(R.layout.list_item, parent ,false)
+
         return ItemViewHolder(adapterLayout)
     }
 
-    override fun getItemCount():Int {
-        TODO("Not yet implemented")
-        return dataset.size
-    }
+    override fun getItemCount() = dataset.size
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        TODO("Not yet implemented")
+
         val item = dataset[position]
         holder.textView.text = context.resources.getString(item.stringResourceId)
     }
